@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import ProjetoBase from './components/ProjetoBase/ProjetoBase';
+import 'materialize-css/dist/css/materialize.min.css';
+import Page from './pages/index'
 
 export default class App extends Component {
   render() {
-    return <ProjetoBase />;
+    return (<Page />)
   }
 }
