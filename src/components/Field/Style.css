@@ -1,29 +1,34 @@
 .input-salario{
 font-weight: 400;
-color: black;
+ color: black;
 }
 
 .base-inss{
  font-weight: 700;
  color: black;
+
 }
 
 .desconto-inss{
  font-weight: 900;
- color: rgb(233, 142, 6);
+ color: rgb(233, 142, 6) !important;
+
 }
 
 .base-irpf{
  font-weight: 900;
  color: rgb(233, 142, 6);
+
 }
 
 .desconto-irpf{
  font-weight: 900;
- color: rgb(233, 142, 6);
+ color: rgb(136, 57, 51) !important;
+
 }
 
 .salario-liquido{
  font-weight: 900;
- color: rgb(233, 142, 6);
+ color: rgb(55, 168, 26) !important;
+
 }

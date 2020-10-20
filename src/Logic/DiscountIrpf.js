@@ -1,4 +1,5 @@
 export default (salario) => {
+
  if (salario <= 1903.98) {
   return 0;
 

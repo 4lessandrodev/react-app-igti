@@ -4,10 +4,10 @@ export default (props) => {
  return {
   baseInss:salarioNumber,
   descontoInss:discontoInss,
-  porcentagemInss:String(parseFloat((salarioNumber / discontoInss)).toFixed(2)),
+  porcentagemInss:String(parseFloat(((discontoInss / salarioNumber) * 100)).toFixed(2)),
   baseIrpf:(salarioNumber - discontoInss),
   descontoIrpf: discontoIrpf,
-  porcentagemIrpf: String(parseFloat((salarioNumber - discontoInss) / discontoIrpf).toFixed(2)),
+  porcentagemIrpf: String(parseFloat((discontoIrpf / (salarioNumber - discontoInss))*100).toFixed(2)),
   salarioLiquido:(salarioNumber - discontoIrpf - discontoInss)
  }
 
