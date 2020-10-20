@@ -44,12 +44,12 @@ return String(this.formatNumber(valor));
 }
 
 formatRealComPorcentagem = (valor, porcentagem) => {
-return `${this.formatReal(valor)} - ${this.formatPercent(porcentagem)}%`
+return `${this.formatReal(valor)} (${this.formatPercent(porcentagem)}%)`
 }
 
 gerarSalarioEPorcentagemSalarioLiquido = (salario, porcentagemIrpf, porcentagemInss) => {
-return `${this.formatReal(salario)} -
-${(this.formatPercent(100-parseFloat(porcentagemIrpf)-parseFloat(porcentagemInss)))|'0'}%`
+return `${this.formatReal(salario)} 
+(${(this.formatPercent(100-parseFloat(porcentagemIrpf)-parseFloat(porcentagemInss)))|'0'}%)`
 }
 
 formatNumber =(number)=> new Intl.NumberFormat('pt-BR',{ style: 'currency', currency: 'BRL' }).format(number);
